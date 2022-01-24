@@ -1,0 +1,144 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           distiller
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/AliasQli/distiller#readme>
+homepage:       https://github.com/AliasQli/distiller#readme
+bug-reports:    https://github.com/AliasQli/distiller/issues
+author:         Alias Qli
+maintainer:     2576814881@qq.com
+copyright:      2021 Alias Qli
+license:        modified BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/AliasQli/distiller
+
+library
+  exposed-modules:
+      Bathe
+      Distill
+      Type
+  other-modules:
+      Paths_distiller
+  hs-source-dirs:
+      src
+  default-extensions:
+      ApplicativeDo
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveLift
+      DeriveTraversable
+      DerivingStrategies
+      DuplicateRecordFields
+      EmptyCase
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      PartialTypeSignatures
+      PatternSynonyms
+      QuasiQuotes
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TemplateHaskell
+      TupleSections
+      TypeApplications
+      TypeFamilies
+      TypeFamilyDependencies
+      TypeOperators
+  ghc-options: -j -O -Wall -Wcompat -Wincomplete-record-updates -Wredundant-constraints -Wno-unused-do-bind -Wno-orphans -Wno-name-shadowing -Wno-partial-type-signatures
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl
+    , random
+    , serialise
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable distiller
+  main-is: Main.hs
+  other-modules:
+      Paths_distiller
+  hs-source-dirs:
+      app
+  default-extensions:
+      ApplicativeDo
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveLift
+      DeriveTraversable
+      DerivingStrategies
+      DuplicateRecordFields
+      EmptyCase
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      PartialTypeSignatures
+      PatternSynonyms
+      QuasiQuotes
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TemplateHaskell
+      TupleSections
+      TypeApplications
+      TypeFamilies
+      TypeFamilyDependencies
+      TypeOperators
+  ghc-options: -j -O -Wall -Wcompat -Wincomplete-record-updates -Wredundant-constraints -Wno-unused-do-bind -Wno-orphans -Wno-name-shadowing -Wno-partial-type-signatures -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , distiller
+    , mtl
+    , random
+    , serialise
+    , text
+    , vector
+  default-language: Haskell2010
